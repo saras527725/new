@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>first form</h1>
+    <!-- <form> :- is use for creating form -->
+    <form action>
+        <!-- lable use for assining label of input and if we click on it we go on connect input -->
+    <label for="name">enter the name :- </label>
+        <!-- input :- is use for taking input from user it have various type -->
+        <!-- required :- necessory to fill this -->
+        <!-- autofocus :- when you load the page automaticaly typing option occur -->
+        <input type="text" name="name" placeholder="name" id="name" required autofocus>
+        <div>
+            <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+        </div>
+        <div>
+            <label for="box">are you ready</label>
+            <input type="checkbox" name="check" id="box">
+        </div>
+        <div>
+            <label for="tex">enter your text :- </label>
+            <!-- textarea give yor area for write text -->
+            <textarea name="texta" placeholder="enter here:-" id="tex" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="item">which fruit you like :- </label>
+            <!-- select tag is use for selecting option -->
+            <select name="se" id="item">
+                <!-- option tag provide option of select tag -->
+                <option value="apple">Apple</option>
+                <option value="banana">banana</option>
+                <option value="orange">orange</option>
+                <option value="grapes">grapes</option>
+            </select>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body> 
+</html>

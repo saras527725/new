@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v39 - grid2</title>
+    <style>
+        .container{
+            border: 2px solid;
+            /* display is for using the property of grid */
+            display: grid;
+            /* dividing the area according to need */
+            grid-template-areas: 'nav nav' 'img article' 'footer footer';
+
+            /* screen divided in three fraction(fr) first column have 1fr ,second have 1fr */
+            grid-template-columns: 1fr 2fr ;
+            /* or write :- grid-template-columns: repeat(2,1fr); */
+
+            /* gap is same as flex */
+            /* align-items , align-content , justify-content , flexing is all same as flex  */
+        }
+        .box{
+            border: 2px solid red;
+            height: 55px;
+            /* width: 55px; */
+        }
+        .b1{
+            /* assign the area to the content/box */
+            grid-area: nav;
+        }
+        .b2{
+            grid-area: article;
+        }
+        .b3{
+            grid-area: img;
+        }
+        .b4{
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+        <div class="box b4">4</div>
+    </div>
+</body>
+</html>

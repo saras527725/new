@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let first,second,third;
+        let random = Math.random()
+        let random1 = Math.random()
+        let random2 = Math.random()
+        if (random<0.33) {
+            first="crazy"
+        }
+        else if (random>0.33 & random<0.66) {
+            first="amazing"
+        } 
+        else {
+            first="fine"
+        }
+        if (random1<0.33) {
+            second="engine"
+        }
+        else if (random1>0.33 & random1<0.66) {
+            second="foods"
+        } 
+        else {
+            second="garments"
+        }
+        if (random2<0.33) {
+            third="bros"
+        }
+        else if (random2>0.33 & random2<0.66) {
+            third="limited"
+        } 
+        else {
+            third="hub"
+        }
+        console.log(`${first} ${second} ${third}`)
+    </script>
+</body>
+</html>

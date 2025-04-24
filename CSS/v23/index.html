@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c{
+            /* block to inline */
+            /* if we need proper margin and pading in inline than we use block also like (inline block) */
+            display: inline;
+            display: none;
+        }
+        .s{
+            /* inline to block */
+            display: block;
+            /* hide the data but spacining is present */
+            visibility: hidden;
+        }
+        .f{
+            border: 2px solid;
+            /* content in center or flex */
+            /* inline flex for same line */
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div>this is block </div>
+    <div class="c">enter  anthing in block element</div>
+    <span>this is also inline</span>
+    <span class="s">this is inline element.  &nbsp;</span>
+    <p class="f">this is system flex</p>
+</body>
+</html>

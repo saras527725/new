@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <!-- using internal css -->
+    <style>
+        /* using element selector  */
+        div {
+            background: greenyellow;
+        }
+
+        /* class selector */
+        .blue {
+            background: blue;
+        }
+
+        /* id selector */
+        #red {
+            background: red;
+        }
+
+        /* child selector :- child is come after parent element*/
+        div>big {
+            background: rgb(224, 129, 129);
+        }
+        /* descendant selector */
+        span big{
+            background: gray;
+        }
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 1%;
+        }
+        /* pseudo selector */
+        /* if user visited the link */
+        a:visited{
+            color: yellow;
+        }
+        /* if user is not visited the link */
+        a:link{
+            color: rgb(104, 194, 104);
+        }
+        /* when we click it change the color */
+        a:active{
+            background: rgb(186, 134, 235);
+        }
+        /* when corser goes to link it change the color */
+        a:hover{
+            background: rgb(245, 142, 142);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>this is div</p>
+
+        <big>this is create by child selector</big>
+    </div>
+    <p class="blue"> this is para and change thier color</p>
+    <p id="red"> this is id selector</p>
+    <span>
+        <article>
+            <big>this is big</big>
+        </article>
+    </span>
+    <a href="https://www.google.co.in/">google</a>
+    <a href="https://www.facebook2.com.in/" target="_blank">facebook</a>
+</body>
+
+</html>

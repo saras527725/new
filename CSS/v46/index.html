@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            height: 90vh;
+            width: 90vw;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 20vh;
+            width: 20vw;
+            background-color: violet;
+
+            /* animation all property in one tag */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation:gargkaanimation 2s ease-in-out 1s 4 alternate-reverse both; */
+
+            /* calling animation function */
+            animation-name: gargkaanimation;
+            /* give animation duration */
+            animation-duration: 3s;
+            /* give number of animation run or infinte */
+            animation-iteration-count: infinite;
+            /* animation timinm function same as transition */
+            animation-timing-function: ease-out;
+            /* dealy in animation */
+            animation-delay: 1s;
+            /* give direction to thier animation */
+            animation-direction: alternate-reverse;
+
+            /* pause - run or more in your animation where you wnat */
+            /* animation-play-state: paused; */
+
+            /* it is basicaly use to end the animation in the end or start */
+            animation-fill-mode:forwards ;
+        }
+        /* creating animation */
+        @keyframes gargkaanimation {
+            /* starting point */
+            from{
+
+            }
+            /* end point */
+            to{
+                transform: rotatey(360deg);
+            }
+        }
+        @keyframes garg {
+            /* dividing in the percentage of animation */
+            0%{}
+            25%{}
+            50%{}
+            75%{}
+            
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box b">Box</div>
+    </div>
+</body>
+</html>

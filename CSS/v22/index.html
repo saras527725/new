@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0; 
+        }
+        .box{ 
+            box-sizing: border-box;
+            background: #bbe9a2;
+            /* px is basicaly use for small sizeing */
+            border: 2px solid;
+            /* width: 200px; */
+            /* vw automaticaly manage */
+            width: 90vw;
+            /* vh says how much percent space you need in screen */
+            height: 10vh;
+            
+            /* margin:auto automaticaly give margin and place in center  */
+            margin: auto;
+        }
+        p{
+            /* fon size increase by multiple (like you write 1.5em :- it give (original size * 1.5)) */
+            font-size: 1.5em;
+            color: rgb(51, 105, 153);
+            /* rem is also theire it increase the size same as em but in root */
+        }
+        div>p{
+            color: #bbe9a2; 
+            /* vmin or vh automatically manage height according to screen */
+            width: 100vmin;
+            background: #000;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">this is box</div>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum est ut illo adipisci nobis dolor eos aperiam odit. Facere vitae iste nisi in eos, repellat sint quisquam! Soluta libero ex autem omnis minus hic debitis praesentium ad odit consequatur molestias voluptatum, dolor fugit corrupti unde et qui tempora. Error quis est totam beatae tempora debitis autem officia esse. Deleniti illo voluptates pariatur atque quaerat veniam nostrum!</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, aut nobis fuga vero autem quas perspiciatis! Nihil veniam quidem error ratione voluptas consequatur atque dolore dolorum molestiae possimus! Eius natus inventore, qui, officiis exercitationem commodi tenetur quo pariatur veritatis iure aspernatur corrupti perspiciatis nisi maiores architecto quod et tempora autem eos, expedita eveniet earum possimus nesciunt.</p>
+</body>
+</html>

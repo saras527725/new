@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v38-flex box</title>
+    <style>
+        /* container property */
+        .container{
+            border: 2px solid red;
+            /* write disply:flex for using flex property */
+            display: flex;
+            height: 50vh;
+            /* for row center */
+            justify-content: center;
+
+            /* for column center linewise */
+            /* align-items: center; */
+
+            /* for column center all boxes */
+            align-content: center;
+            /* direction for flex */
+            flex-direction: row;
+            /* wraping the boxes */
+            flex-wrap:wrap ;
+            /* flex-flow: (for flex-direction and flex-wrap together) */
+
+            /* gapping */
+            /* gap: 3px; */
+
+            /* column-gap: 23px; */
+
+            /* row-gap: 22px; */
+
+            /* use row and column property together */
+            gap: 10px 50px;
+        }
+
+        /* item property */
+        .item{
+            height: 12px;
+            width: 55px;
+            border: 2px black;
+            margin: 4px;
+            background-color: blueviolet;
+            /* a box take 1 box space */
+            flex-grow: 1;
+
+            /* flex shrink is use for if we compreses the screen size of box is also decreases */
+            flex-shrink: 2;
+        }
+        .last{
+            /* order help to give numbering to boxes */
+            /* greter order come on the last */
+            order: 14;
+            /* bydefault order set 0 */
+
+            /* a box take 500 box space because flex-grow is 500 */
+            flex-grow:500 ;
+
+            /* align-self for align box it self start , end or where you want */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item last">1</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </main>
+</body>
+</html>

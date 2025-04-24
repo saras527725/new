@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation task</title>
+    <style>
+        body {
+            background: #000;
+        }
+
+        .boll {
+            height: 10vw;
+            width: 10vw;
+            border-radius: 20vw;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation:anixx 3s linear infinite alternate-reverse ,
+                      aniyy 1s ease-out infinite alternate-reverse ;
+            /* animation: animatex 3s ease-out infinite alternate; */
+        }
+        @keyframes anixx {
+            from{
+                left: 0;
+            }
+            to{
+                left: 80%;
+            }
+        }
+        @keyframes aniyy {
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 80%;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="boll"></div>
+    </div>
+</body>
+
+</html>

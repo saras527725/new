@@ -1,0 +1,10 @@
+/* class calling */
+.c{
+    background-color: rgb(211, 189, 233);
+    color: red;
+}
+
+/* id calling */
+#i{
+    background-color: greenyellow;
+}

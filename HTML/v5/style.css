@@ -1,0 +1,13 @@
+th{
+    /* set border of table heading */
+    border: 2px solid;
+}
+table{
+    /* set border of table heading */
+    border: 2px solid;
+    background:rgb(186, 186, 240);
+}
+td{
+    /* set border of table heading */
+    border: 2px solid;
+}

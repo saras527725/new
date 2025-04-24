@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v5 web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <img> :- for adding image -->
+    <h1>normal image</h1>
+    <img src="train1.png" alt="not run">
+    <h1>you want to go indian railway site click on image :-</h1>
+    <a target="_blank"
+        href='https://www.indianrail.gov.in/enquiry/StaticPages/StaticEnquiry.jsp?StaticPage=index.html'><img
+            src="train1.png" height="100" width="199" alt="not working well"></a>
+
+    <!-- <ul> :- unorder list -->
+    <!-- in type we set design of list numbering -->
+    <ul type="circle">
+        <!-- <li> :- give data to list -->
+        <li>name</li>
+        <li>class</li>
+        <li>roll number</li>
+    </ul>
+    <!-- <ol> :- order list -->
+    <!-- type give the numbering of the list data -->
+    <ol type="I">
+        <li>name</li>
+        <li>class</li>
+        <li>roll number</li>
+    </ol>
+    <!-- <table> :- use for creating table -->
+    <table>
+        <!-- <caption> :- main heading of table -->
+        <caption>Student Detail</caption>
+        <!-- <tr> :- table row -->
+        <thead>
+            <tr>
+                <!-- <th> :- table heading -->
+                <th>name</th>
+                <th>class</th>
+                <th>roll number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- <td> :- table data -->
+                <!-- rowspan assign the row
+                         colspan assign the colum -->
+                <td>shashank</td>
+                <td rowspan="2">10</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>ram</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>sam</td>
+                <td>5</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>sanju</td>
+                <td>10</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>samu</td>
+                <td colspan="2">5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="3">footer</td>
+        </tfoot>
+    </table>
+    <h1>Definition list</h1>
+    <dl>
+        <dt>HTML</dt>
+        <dd>html is Skeleton of website </dd>
+
+        <dt>CSS</dt>
+        <dd>css is skin ,eye,or beutifying the body</dd>
+        
+        <dt>JavaScript</dt>
+        <dd>javascript is mind of website</dd>
+    </dl>
+    <svg width="100" height="100">
+        <circle cx='50' cy='50' r="40" stroke="black" stroke-width="3" fill="red"/>
+    </svg>
+    <script src="script.js"></script>
+</body>
+
+</html>

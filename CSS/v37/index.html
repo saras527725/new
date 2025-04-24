@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Formate</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0%;
+        }
+        .nav{
+            /* for fixing navbar at top */
+            position: sticky;
+            top: 0%;
+
+            background: #000;
+            height: 5vh;
+        }
+        .box{
+            height: auto;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px 10px;
+        }
+        .b1{
+            width: 40vw;
+            background-color: aliceblue;
+            height: 80vh;
+            border: 2px solid #000;
+            margin: 5vw;
+        }
+        .br{
+            width: 50vw;
+            height: 30vh;
+            background: #a03c3c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            margin: auto;
+            margin-top: 5vh;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .foot{
+            background: #88e264;
+            height: 5vh;
+            margin-top: 5vh;
+        }
+        .circle{
+            height: 7vw;
+            width: 7vw;
+            border-radius: 20vh;
+            background-color: coral;
+
+            /* for fixing anything anywhere */
+            position: fixed ;
+            bottom: 8vh;
+            right: 4vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="nav">
+        </div>
+        <div class="box">
+                <div class="b1"></div>
+                <div class="b1"></div>
+        </div>
+        <div class="br">
+            Welcome 😊😊
+        </div>
+        <div class="circle"></div>
+        <div class="foot"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid;
+            height: 10vh;
+            width: 10vw;
+            background-color: aliceblue;
+             
+            /* rotate by degree
+            /* or we rotate with the help of ((0 to 1)turn) [where 1 is 360 degree] */
+            /* transform: rotate(40deg); */
+
+            /* or we rotate on the axis also (x,y,z) which you want */
+            /* transform: rotatey(111deg); */
+
+            /* we can do incriment also with the help of scale or we increase by axis also */
+            /* transform: scaley(2); */
+
+            /* kichna 2 side sa (skew) */
+            transform: skewy(5deg);
+
+            /* shifting is called translate */
+            /* transform: translate(100%); */
+
+            /* we can use multiple transection property with sapce on sinlgle transform tag */
+
+            /* transform-origin:32% 0%; is use for set the point(origin) of the box */
+        }
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box"> box</div>
+    </div>
+</body>
+</html>

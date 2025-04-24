@@ -1,0 +1,21 @@
+.set{
+    background: #da1313;
+}
+.se{
+    /* type of margin */
+    margin-left: 11%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.set1{
+    background: #8df180;
+    /* dividing box boundry in 4 parts */
+    margin: 10px;
+    border: 12px solid black;
+    padding: 11px;
+    /* if we give only height :- it goes by default content */
+    height: 100px;
+    /* box sizing dividing height all the perameters according to thier needs */
+    box-sizing: border-box;
+}

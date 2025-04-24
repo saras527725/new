@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v39 - grid1</title>
+    <style>
+        /* container property */
+        .container{
+            border: 2px solid yellow;
+            /* grid basically divided row according to you */
+            display: grid;
+            /* give coloumns and row */
+            grid-template-columns: 120px 100px;
+            /* we can give name to lines like [rone] 120px [rtwo] 100px [rthree] */
+        }
+        .box{
+            border:2px solid red;
+            height: 45px;
+            width: 45px;
+            margin: 5px;
+        }
+        .b1{
+            /* row 2 and 3 (using row line 2,3,4) */
+            grid-row: 2/4;
+            /* column 1 */
+            grid-column: 1/2;
+            /* we can do overlaping also with this */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box b1">4</div>
+        <div class="box">5</div>
+    </div>
+</body>
+</html>

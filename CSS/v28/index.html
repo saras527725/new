@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v28</title>
+    <style>
+        .par{
+            margin: 2px;
+            border: 2px solid;
+        }
+        .b{
+            margin: 2px;
+            height: 150px;
+            border: 2px solid;
+            width: 55vw;
+        }
+        .c1{
+            background: #df8989;
+            /* it start editing from the top (or starting point of the page) */
+            position:absolute;
+            top: 0px;
+        }
+        .c2{
+            background: #d4f17b;
+            /*for position changeing (or anyother change) set realtive position */
+            /* fixed for fixed the box in the page */
+            /* sticky is use for basicqlly navbar to fix it on top */
+            position:relative;
+            /* set margin from top */
+            top: 39px; 
+            /* set margin from left or right */
+            left: 55px;
+        }
+        .c3{
+            background: #7bed75;
+            position: relative;
+            /* it use for box prefrence */
+            z-index: index 1;;
+        }
+        .c4{
+            background: #73cae7;
+        }
+    </style>
+</head>
+<body>
+    <div class="par">
+        <div class="b c1"></div>
+        <div class="b c2"></div>
+        <div class="b c3"></div>
+        <div class="b c4"></div>
+    </div>
+</body>
+</html>
